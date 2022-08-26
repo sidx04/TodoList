@@ -1,7 +1,8 @@
- import React from 'react'
+ import React, {useState} from 'react'
 import { View, Text, StyleSheet, Touchable, TouchableOpacity } from 'react-native'
 
 const Task = (props) => {
+    const [task,setTask]=useState();
   return (
     <View style={styles.item}>
         <View style={styles.itemLeft}>
@@ -10,6 +11,8 @@ const Task = (props) => {
         </View>
         <View style={styles.circular}></View>
     </View>
+
+    
   )
 }
 
@@ -44,9 +47,9 @@ const styles=StyleSheet.create({
     circular:{
         width:16,
         height:16,
-        borderColor:'#757BC8',
+        borderColor:'#749eff',
         borderWidth:3,
-        borderRadius:5
+        borderRadius:50
 
     },
  })
