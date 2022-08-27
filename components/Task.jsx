@@ -2,7 +2,6 @@
 import { View, Text, StyleSheet, Touchable, TouchableOpacity } from 'react-native'
 
 const Task = (props) => {
-    const [task,setTask]=useState();
   return (
     <View style={styles.item}>
         <View style={styles.itemLeft}>
